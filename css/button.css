@@ -1,0 +1,51 @@
+@charset "utf-8";
+.button {
+	color: #FFF;
+	text-align: center;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	border: 0.2px solid #CB1112;
+	border-radius:5px;
+	background-image: url(../image/button.png);
+	height: 40px;
+	width: 100px;
+	position: relative;
+}
+
+
+.button:hover {
+	background-image: url(../image/button_hover.png);
+}
+
+#login {
+}
+#name {
+	float: none;
+	text-align: right;
+	width: 120px;
+	line-height: 20px;
+	position: absolute;
+	left: 657px;
+	top: 678px;
+	height: 110px;
+	font-family: "微软雅黑";
+}
+#name_input {
+	float: none;
+	text-align: left;
+	width: 200px;
+	position: absolute;
+	left: 138px;
+	top: -1px;
+	
+}
+
+.button:active {
+	background-image: url(../image/button_click.png);
+}
+.input {
+	border-radius:5px;
+	border: 1px solid #CCC;
+	height: 16px;
+	width: 200px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>医院快乐网</title>
+<!-- InstanceEndEditable -->
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image: url();
+}
+ul{margin:0;padding:0;list-style:none;}
+</style>
+<style>
+ul { list-style-type: none;}
+li { display: inline-block;}
+li { margin: 10px 0;}
+input.labelauty +  label { font: 12px "Microsoft Yahei";}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<link href="css/xi.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-image: url();
+	background-color: #666;
+}
+</style>
+<!-- InstanceEndEditable -->
+  <script>
+  
+
+
+
+  
+</script>
+</head>
+<body class="body">
+<div class="caidan" id="caidan">
+    <ul>
+      <li class="search_ul"><a href="hospital.html">医院查找</a></li>
+      <li class="search_ul"><a href="doctor.html">医生查找</a></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"><a href="#">文章查找</a></li>
+      <li class="search_ul"></li>
+  </ul>
+</div>
+
+<div class="mobanyong">
+
+  
+</div>
+<div class="body0" id="body">
+  <div class="search" id="search">
+    <div class="left" id="logo"><a href="hospital.html"><img src="image/logo.png" width="233" height="53" /></a></div>
+    <div class="right" id="t_search"></div>
+  </div>
+  <div id="xiaoguanggao"></div>
+  <div class="locate" id="dangqianweizhi">当前位置：<!-- InstanceBeginEditable name="moban1" --><a href="首页.html">首页</a>&gt;<a href="医院查找列表.html">医院查找</a>&gt;<a href="医院详细信息.html">详细信息</a><!-- InstanceEndEditable --></div>
+  <!-- InstanceBeginEditable name="moban2" -->
+  <script>
+  var fadeEffect=function(){
+  return{
+    init:function(id, flag, target){
+      this.elem = document.getElementById(id);
+      clearInterval(this.elem.si);
+      this.target = target ? target : flag ? 100 : 30;
+      this.flag = flag || -1;
+      this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 30;
+      this.si = setInterval(function(){fadeEffect.tween()}, 20);
+    },
+    tween:function(){
+      if(this.alpha == this.target){
+        clearInterval(this.si);
+      }
+     else{
+       var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+       this.elem.style.opacity = value / 100;
+       this.elem.style.filter = 'alpha(opacity=' + value + ')';
+       this.alpha = value
+    }
+  }
+}
+}();
+window.onload=function(){
+  var fadein=document.getElementById("fade");
+  var fadeout=document.getElementById("fade");
+    
+  fadein.onmouseover=function(){fadeEffect.init('fade', 1)}
+  fadeout.onmouseout=function(){fadeEffect.init('fade', 0)}
+}
+</script>
+<div class="yingyinblock">
+  
+ <div class="fenge"  id="fenge"></div>
+  <p>&nbsp;
+  </p>
+  <div  id="fade"><a href="http://api.map.baidu.com/place/search?query=中国医学科学院北京协和医院&radius=1000&region=北京市&output=html&zoom=16&src=webapp.baidu.openAPIdemo" target="_blank"><img type="location" style="width:250px; height:250px;" src="http://api.map.baidu.com/staticimage?&#10;&#9;&#9;&#9;&#9;width=250&amp;height=250&amp;zoom=16&amp;center=北京协和医院"/></a>
+</div>
+<div class = "information" id="jieguo"><div class="fenge"></div>
+   <div class="table" id="table">
+     <table width="597" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="500" height="60" align="center" class="table_biaoti">医院名</td>
+        </tr>
+       <tr>
+         <td width="500" height="40" align="center">省名 市名</td>
+        </tr>
+       <tr>
+         <td width="500" height="40" align="center">等级：三级甲等</td>
+        </tr>
+       <tr>
+         <td width="500" height="30" align="center">官网：www.4399.com</td>
+        </tr>
+   </table>
+   </div>
+   <div class="fenge"></div>
+     <div class="table_neirong">
+       <p>成都市第七人民医院（成都市肿瘤医院、成都市癌症防治中心）共有两个院区，新南医院位于四川省成都市武侯区十二中街1号，始建于1950年，占地面积70247.9平方米，是一所集医疗、科研、教学为一体的三级乙等肿瘤专科医院，是成都市医保和新农合定点医院，是成都中医药大学、成都大学医护学院、成都铁路卫生学校、四川大学附设华西卫生学校等多所医学院校的临床教学医院，先后荣获国际爱婴医院、全国综合医院中医药工作示范单位、四川省文明单位、四川省文明医院、成都市优质服务最佳单位、成都市文明单位、成都市文明医院等荣誉称号。 </p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+     </div>
+ 
+  
+  
+   
+  </div>
+  <p>&nbsp;</p>
+       <p>&nbsp;</p>
+  </div>
+    <p>&nbsp;</p>
+       <p>&nbsp;</p>
+  <!-- InstanceEndEditable --> </div>
+<div id="bottom">版权所有 翻版必究
+  <div class="zhuangshi"> <img src="image/newlogo2.png" width="100%" height="90" /></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

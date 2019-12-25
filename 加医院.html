@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>医院快乐网</title>
+<!-- InstanceEndEditable -->
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image: url();
+}
+ul{margin:0;padding:0;list-style:none;}
+</style>
+<style>
+ul { list-style-type: none;}
+li { display: inline-block;}
+li { margin: 10px 0;}
+input.labelauty +  label { font: 12px "Microsoft Yahei";}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<link href="css/xi.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-image: url();
+	background-color: #666;
+}
+</style>
+<link href="css/button.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable -->
+  <script>
+  
+
+
+
+  
+</script>
+</head>
+<body class="body">
+<div class="caidan" id="caidan">
+    <ul>
+      <li class="search_ul"><a href="hospital.html">医院查找</a></li>
+      <li class="search_ul"><a href="doctor.html">医生查找</a></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"><a href="#">文章查找</a></li>
+      <li class="search_ul"></li>
+  </ul>
+</div>
+
+<div class="mobanyong">
+
+  
+</div>
+<div class="body0" id="body">
+  <div class="search" id="search">
+    <div class="left" id="logo"><a href="hospital.html"><img src="image/logo.png" width="233" height="53" /></a></div>
+    <div class="right" id="t_search"></div>
+  </div>
+  <div id="xiaoguanggao"></div>
+  <div class="locate" id="dangqianweizhi">当前位置：<!-- InstanceBeginEditable name="moban1" --><a href="首页.html">首页</a>&gt;添加医院<a href="医院详细信息.html"></a><!-- InstanceEndEditable --></div>
+  <!-- InstanceBeginEditable name="moban2" -->
+  <script>
+  var fadeEffect=function(){
+  return{
+    init:function(id, flag, target){
+      this.elem = document.getElementById(id);
+      clearInterval(this.elem.si);
+      this.target = target ? target : flag ? 100 : 30;
+      this.flag = flag || -1;
+      this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 30;
+      this.si = setInterval(function(){fadeEffect.tween()}, 20);
+    },
+    tween:function(){
+      if(this.alpha == this.target){
+        clearInterval(this.si);
+      }
+     else{
+       var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+       this.elem.style.opacity = value / 100;
+       this.elem.style.filter = 'alpha(opacity=' + value + ')';
+       this.alpha = value
+    }
+  }
+}
+}();
+window.onload=function(){
+  var fadein=document.getElementById("fade");
+  var fadeout=document.getElementById("fade");
+    
+  fadein.onmouseover=function(){fadeEffect.init('fade', 1)}
+  fadeout.onmouseout=function(){fadeEffect.init('fade', 0)}
+}
+</script>
+<div class="yingyinblock">
+  <form id="form1" name="form1" method="post" action="">
+ <div class="fenge"  id="fenge"></div>
+  <p>&nbsp;
+  </p>
+  <div class = "information" id="jieguo">
+    <div id="login">
+      
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    
+</div>
+  
+  
+  </div>
+  <div id="name">
+    <p>医院id</p>
+    <p>医院名</p>
+    <p>所在省份</p>
+    <p>所在城市</p>
+    <p>医院介绍</p>
+    <p>医院等级</p>
+    <p>医院地址</p>
+    <p>医院网址</p>
+    <p>医院热度</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="name_input">
+      <p>
+        <label for="username4"></label>
+        <input type="text" name="username" class="input"id="username4" />
+      </p>
+      <p>
+        <label for="password"></label>
+        <input name="password" type="text" class="input" id="password" />
+      </p>
+      <p>
+        <input type="password" name="password2"class="input" id="password2" />
+      </p>
+      <p>
+        <input type="password" name="password3"class="input" id="password3" />
+      </p>
+      <p>
+        <input type="password" name="password4" class="input"id="password4" />
+      </p>
+      <p>
+        <input type="password" name="password5" class="input"id="password5" />
+      </p>
+      <p>
+        <input type="password" name="password6" class="input"id="password6" />
+      </p>
+      <p>
+        <input type="password" name="password7"class="input" id="password7" />
+      </p>
+      <p>
+        <input type="password" name="password8" class="input"id="password8" />
+      </p>
+      <p>
+        <input type="submit" class="button" id="login2" value="提交" />
+      </p>
+    </div>
+  </div>
+<p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+<p>&nbsp;</p>
+       <p>&nbsp;</p>
+       </form>
+</div>
+  <!-- InstanceEndEditable --> </div>
+<div id="bottom">版权所有 翻版必究
+  <div class="zhuangshi"> <img src="image/newlogo2.png" width="100%" height="90" /></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

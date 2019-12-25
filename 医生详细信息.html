@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>医院快乐网</title>
+<!-- InstanceEndEditable -->
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image: url();
+}
+ul{margin:0;padding:0;list-style:none;}
+</style>
+<style>
+ul { list-style-type: none;}
+li { display: inline-block;}
+li { margin: 10px 0;}
+input.labelauty +  label { font: 12px "Microsoft Yahei";}
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<link href="css/xi.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-image: url();
+	background-color: #666;
+}
+</style>
+<!-- InstanceEndEditable -->
+  <script>
+  
+
+
+
+  
+</script>
+</head>
+<body class="body">
+<div class="caidan" id="caidan">
+    <ul>
+      <li class="search_ul"><a href="hospital.html">医院查找</a></li>
+      <li class="search_ul"><a href="doctor.html">医生查找</a></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"></li>
+      <li class="search_ul"><a href="#">文章查找</a></li>
+      <li class="search_ul"></li>
+  </ul>
+</div>
+
+<div class="mobanyong">
+
+  
+</div>
+<div class="body0" id="body">
+  <div class="search" id="search">
+    <div class="left" id="logo"><a href="hospital.html"><img src="image/logo.png" width="233" height="53" /></a></div>
+    <div class="right" id="t_search"></div>
+  </div>
+  <div id="xiaoguanggao"></div>
+  <div class="locate" id="dangqianweizhi">当前位置：<!-- InstanceBeginEditable name="moban1" --><a href="首页.html">首页</a>&gt;<a href="医生查找列表.html">医生查找</a>&gt;<a href="医生详细信息.html">详细信息</a><!-- InstanceEndEditable --></div>
+  <!-- InstanceBeginEditable name="moban2" -->
+  <script>
+  var fadeEffect=function(){
+  return{
+    init:function(id, flag, target){
+      this.elem = document.getElementById(id);
+      clearInterval(this.elem.si);
+      this.target = target ? target : flag ? 100 : 30;
+      this.flag = flag || -1;
+      this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 30;
+      this.si = setInterval(function(){fadeEffect.tween()}, 20);
+    },
+    tween:function(){
+      if(this.alpha == this.target){
+        clearInterval(this.si);
+      }
+     else{
+       var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+       this.elem.style.opacity = value / 100;
+       this.elem.style.filter = 'alpha(opacity=' + value + ')';
+       this.alpha = value
+    }
+  }
+}
+}();
+window.onload=function(){
+  var fadein=document.getElementById("fade");
+  var fadeout=document.getElementById("fade");
+    
+  fadein.onmouseover=function(){fadeEffect.init('fade', 1)}
+  fadeout.onmouseout=function(){fadeEffect.init('fade', 0)}
+}
+</script>
+<div class="yingyinblock">
+
+  <div class="fenge"  id="fenge"></div>
+  <p>&nbsp;
+  </p>
+  <div  id="fade"><img src="image/doctorxi.png" width="239" height="239" /></div>
+<div class = "information" id="jieguo"><div class="fenge"></div>
+   <div class="table" id="table">
+     <table width="597" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="500" height="60" align="center" class="table_biaoti">医生名</td>
+        </tr>
+       <tr>
+         <td width="500" height="40" align="center">职位</td>
+        </tr>
+       <tr>
+         <td width="500" height="40" align="center">科室</td>
+        </tr>
+       <tr>
+         <td width="500" height="30" align="center">擅长疾病</td>
+        </tr>
+         <tr>
+         <td width="500" height="30" align="center">所属医院</td>
+        </tr>
+        <tr>
+         <td width="500" height="30" align="center">个人介绍</td>
+        </tr>
+   </table>
+   </div>
+   
+   
+ 
+  
+  <p>&nbsp;</p>
+       
+       <p>&nbsp;</p><p>&nbsp;</p> <div class="fenge"></div>
+       <p>&nbsp;</p>
+   
+  </div>
+  <p>&nbsp;</p>
+       <p>&nbsp;</p>
+  </div>
+    <p>&nbsp;</p>
+       <p>&nbsp;</p>
+  <!-- InstanceEndEditable --> </div>
+<div id="bottom">版权所有 翻版必究
+  <div class="zhuangshi"> <img src="image/newlogo2.png" width="100%" height="90" /></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

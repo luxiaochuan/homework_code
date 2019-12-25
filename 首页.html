@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>寻医</title> 
+<script>
+var count=2
+function load(){document.body.style.backgroundImage="url('image/baccc2.gif')";
+setInterval("displayResult()","7000");
+	};
+
+function displayResult(){
+   var img = new Image();
+   if(count==2)
+   {
+   img.src='image/baccc.gif';
+   count =1;
+   }
+   else if(count==1){
+   img.src='image/baccc2.gif';
+   count =2;}
+   
+   img.onload = function(){
+	   document.body.style.backgroundImage = "url(" + img.src + ")";};
+   
+};
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.preload {
+}
+</style>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body class = "body" onload="load();">
+<div id=logo><img src="image/logo2.png" width="149" height="79"></div>
+<div class="head2">医院查找 | 医生查找 | 联系我们 |<a href="#"class="anniu"> 登录 </a> | <a href="#"class="anniu">注册</a> </div>
+
+<div id="tiaojian" class="touming" >
+  <form id="select_hos" name="form1" method="post" action="">
+  <select name="xuanze" class="xuanze" id="xuanze">
+        <option value="hospital" selected="selected">查医院</option>
+        <option value="doctor">查医生</option>
+        
+ </select>
+<p>
+      <label for="txt"></label>
+    <a href="#"class="anniu">宿舍</a></p>
+    <p> <span>
+      <input name="txt" type="text" class="txt" id="txt" />
+      <input name="post" type="submit" class="submit" id="post" value="提交" />
+    </span></p>
+  </form>
+</div>
+</body>
+</html>
